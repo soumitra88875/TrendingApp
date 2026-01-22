@@ -1,94 +1,65 @@
 ---
 layout: default
+title: VPN Lumos – Fast & Secure VPN for Android
 ---
 
-<ul class="post-list">
+<h1>VPN Lumos – Fast & Secure VPN for Android</h1>
 
-{%- assign pinned_posts = site.posts | where: "pinned", true -%}
-{%- assign normal_all = site.posts | where_exp: "post", "post.pinned != true" -%}
+<p>
+Looking for a simple and fast VPN app to protect your privacy online?
+<strong>VPN Lumos</strong> is designed for Android users who want a smooth,
+one-tap VPN experience.
+</p>
 
-<!-- 🔥 PINNED POST (ONLY FIRST PAGE, OUTSIDE PAGINATION) -->
-{% if paginator.page == 1 %}
-  {% for post in pinned_posts %}
-    <li class="pinned-post" style="display:flex;align-items:center;margin-bottom:15px;">
+<h2>Why Choose VPN Lumos?</h2>
 
-      {% if post.thumbnail %}
-        <img src="{{ post.thumbnail }}">
-      {% endif %}
-
-      <div>
-        <a href="{{ post.url | relative_url }}">
-          <b>{{ post.title }}</b>
-        </a>
-        <div class="pin-label">📌 Pinned</div>
-
-        <small style="color:#777;">
-          {{ post.date | date: "%b %d, %Y" }}
-        </small>
-      </div>
-
-    </li>
-  {% endfor %}
-{% endif %}
-
-<!-- 🔹 NORMAL POSTS (STRICT PAGINATION WITHOUT PINNED) -->
-{% assign per_page = site.paginate %}
-{% assign offset = per_page | times: paginator.page | minus: per_page %}
-{% assign page_posts = normal_all | slice: offset, per_page %}
-
-{% for post in page_posts %}
-  <li style="display:flex;align-items:center;margin-bottom:15px;">
-
-    {% if post.thumbnail %}
-      <img src="{{ post.thumbnail }}">
-    {% endif %}
-
-    <div>
-      <a href="{{ post.url | relative_url }}">
-        <b>{{ post.title }}</b>
-      </a><br>
-
-      <small style="color:#777;">
-        {{ post.date | date: "%b %d, %Y" }}
-      </small>
-    </div>
-
-  </li>
-{% endfor %}
-
+<ul>
+  <li>✔ Fast and stable VPN connection</li>
+  <li>✔ Easy one-tap connect</li>
+  <li>✔ Helps protect your online privacy</li>
+  <li>✔ Works well on Android devices</li>
 </ul>
 
-<!-- 🔽 Pagination START -->
-<div style="text-align:center;margin:30px 0;">
+<p>
+This app is suitable for users who want a basic VPN solution without
+complex setup.
+</p>
 
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | relative_url }}">« Prev</a>
-  {% endif %}
+<hr>
 
-  {%- assign pinned_count = pinned_posts | size -%}
-  {%- assign normal_count = site.posts | size | minus: pinned_count -%}
-  {%- assign total_pages = normal_count | divided_by: site.paginate -%}
-  {%- if normal_count | modulo: site.paginate != 0 -%}
-    {%- assign total_pages = total_pages | plus: 1 -%}
-  {%- endif -%}
+<h2>Important Information</h2>
 
-  {% for page in (1..total_pages) %}
-    {% if page == paginator.page %}
-      <strong style="margin:0 6px;">{{ page }}</strong>
+<p>
+⚠ This offer is available <strong>only for Android users in Argentina (AR)</strong>.
+If you are not in Argentina, the app installation may not be counted.
+</p>
 
-    {% elsif page == 1 %}
-      <a href="{{ site.baseurl }}/" style="margin:0 6px;">1</a>
+<p>
+This page contains a promotional link. We may receive a commission
+if you install the app through the link below.
+</p>
 
-    {% else %}
-      <a href="{{ site.baseurl }}/page{{ page }}/" style="margin:0 6px;">
-        {{ page }}
-      </a>
-    {% endif %}
-  {% endfor %}
+<hr>
 
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | relative_url }}">Next »</a>
-  {% endif %}
+<h2>How to Install</h2>
 
-</div>
-<!-- 🔼 Pagination END -->
+<ol>
+  <li>Click the install button below</li>
+  <li>Install VPN Lumos from Google Play</li>
+  <li>Open the app and keep it open for a short time</li>
+</ol>
+
+<a href="YOUR_CPA_LINK_HERE"
+   style="display:inline-block;
+          padding:14px 24px;
+          background:#0d6efd;
+          color:#ffffff;
+          text-decoration:none;
+          border-radius:8px;
+          font-size:18px;">
+⬇ Install VPN Lumos
+</a>
+
+<p style="margin-top:20px; color:#777; font-size:14px;">
+Google Play and Android are trademarks of Google LLC.
+</p>
